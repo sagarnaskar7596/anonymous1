@@ -1,0 +1,49 @@
+.nav{
+    font: 15px arial;
+    font-weight:bold ;
+    margin-left: 30px;
+    height: 30px;
+    
+}
+#heritage{
+    color: #FF6612;
+}
+.main{
+    margin-left: 20px;
+    height: 392px;
+}
+.left_container{
+    width: 625.32px;
+    height: 79.97px;
+    padding-left: 15px;
+    color: #585C66;
+}
+.text1{
+    width: 708.66px;
+    height: 162.98px;
+    font: 20px;
+    padding: 0px 0px 25px;
+    line-height: 25px;
+    color: #585C66;
+}
+.right_container{
+    padding-right: 10px;
+}
+/* img{
+    width: 525px;
+    height: 320px;
+} */
+h2{
+    margin-left: 30px;
+    color: #3b404b;
+}
+.selling{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+a{
+    text-decoration: none;
+    color: #585C66;
+    padding-right: 20px;
+}
+

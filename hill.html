@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<style>
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+    /* background-color:azure */
+  }
+
+  .c:hover {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: border-radius 0.3s ease;
+    border-radius: 0.6s;
+
+  }
+
+  .c:hover {
+    background-color: rgb(160, 159, 159);
+  }
+
+  .c:hover img {
+    border-radius: 50%;
+  }
+
+  .a {
+    height: 400px;
+    background-color: rgb(250, 249, 247);
+
+  }
+
+  .b {
+    float: left;
+    width: 68%;
+    margin-left: 10px;
+
+
+  }
+
+  .c {
+    float: right;
+    width: 31%;
+
+  }
+
+  .d {
+    height: 250px;
+    width: 500px;
+
+
+  }
+
+  .main1 {
+    margin-left: 140px;
+
+  }
+
+  .cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+
+  .card {
+    /* border: 2px solid; */
+    margin: 0px;
+  }
+
+  .card img {
+    height: 200px;
+    transition: border-radius 0.3s ease;
+  }
+
+  .card button:hover {
+    background-color: rgb(85, 192, 231);
+  }
+
+  .card:hover img {
+    border-radius: 50%;
+  }
+
+  .e {
+    display: flex;
+  }
+
+  .f {
+    display: flex;
+  }
+
+  .e {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .ss:hover {
+    background-color: aqua;
+  }
+</style>
+
+
+<body>
+
+  <!--header....................  -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <img style="margin-right: 10px;" src="icon/inner_logo.png">
+    <a class="navbar-brand" href="#">Destinations</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Holiday Ideas <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Packages</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Places to Stay</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link">Weekend Getaways</a>
+        </li>
+      </ul>
+    </div>
+
+    <a href="login.html"> <button style="margin-right: 5px;" type="button" class="btn btn-primary btn-sm">
+        Login</button></a>
+    <button type="button" class="btn btn-secondary btn-sm">Sign up</button>
+  </nav>
+
+  <!-- ................................................. -->
+  <div class="breadcrumb">
+    <div class="breads bread1">
+      <a href="index.html">HOME</a>
+    </div>
+    <div class="breads bread2">
+      <a href="#">LIBRARY</a>
+    </div>
+  </div>
+
+
+
+  <nav class="a">
+    <div class="b">
+      <h1><strong>Hill Stations Tour Packages</strong></h1>
+      <p>The Himalayan belt in the north and northeast, and the Nilgiris in the south bless India with picturesque
+        hill stations that have also once been the retreats for the British rulers as well. For your best holiday in
+        India, we offer you the finest hill station tour packages that come packed with top destinations like J&K,
+        Himachal, Ladakh, Uttarakhand, and Sikkim; sightseeing tour; accommodation arrangements; and adventure
+        activities. With our selection of choicest hill station vacation packages enjoy the best summer holiday,
+        school excursions, corporate outings or that ideal honeymoon you have been planning.In Himachal Pradesh,
+        along with the beauty of the hill stations like Shimla and Manali, enjoy various adventure activities like
+        trekking,paragliding, mountain biking, and more in the state. In Uttarakhand, we offer the chance to relish a holiday amidst
+        the charming hill stations of Mussoorie, Nainital, Lansdowne along with incredibly beautiful hilly places likeAuli,
+        Chopta, Munsiyari and more. Uttarakhand, like Himachal offers great opportunity for trekking, paragliding, river rafting
+        and many other adventure sports for those who want to add an extra edge to their holiday. With our hill station tours in
+        Uttarakhand, you can also plan your religious journey since the state is replete with many important Hindu  temples like
+        Badrinath. Sikkim in Northeast India, is home to the world's second tallest peak, Kanchenjunga and is blessed  with numerous  
+        hill stations that are perfect for family vacation as well as honeymoon. Gangtok, Pelling, Ravangla, Yumthang,  and Yuksom
+        along with many other gorgeous places make Sikkim one of the best hill station holiday destinations. .</p>
+      <button class="ss">know more</button>
+    </div>
+    <div class="c">
+      <img class="d" src="ig/ig1.webp" alt="shutterstock-713453605-copy.jpg">
+    </div>
+  </nav>
+  <h3 class="main1"><strong>Best Selling Hill Stations Tour Packages</strong></h3>
+  <br>
+  <div class="e">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card" style="width: 18rem;">
+          <img src="ig/ig2.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p>5 Nights- 6 days</p>
+            <h5 class="card-title">Best of Kumaon Hills</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card" style="width: 18rem;">
+          <img src="ig/ig3.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p>6 Nights- 7 Days</p>
+            <h5 class="card-title">Best Of Kashmir</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card" style="width: 18rem;">
+          <img src="ig/ig4.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p> 6 nights- 7 days</p>
+            <h5 class="card-title">Nanital With Queen Of Hills</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card" style="width: 18rem;">
+          <img src="ig/ig5.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p>6 nights- 7 Days</p>
+            <h5 class="card-title">Splender Of Kashmir</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- footer part............................................. -->
+  <div class="bottom-container">
+    <div class="items item1">
+      <img src="icon/india-map.png" alt="#">
+      <p style="margin-left: -14px;">India Tour</p>
+    </div>
+    <div class="items item2">
+      <img src="icon/international map.png" alt="#">
+      <p style="margin-left: -14px;">WorldTour</p>
+    </div>
+    <div class="items item3">
+      <img style="width:40px;height:40px;"
+        src="icon/medical-tourism-icon-health-care-tourism-concept-globe-with-stethoscope-plane-sign-stock-vector-eps-10_158224-369.avif"
+        alt="#">
+      <p style="margin-left: -35px;">Medical Tourism</p>
+    </div>
+    <div class="items item4">
+      <img style="width:22px;height:33px;margin-right: 7px;" src="icon/destinationwed.jpg">
+      <p style="margin-left: -60px;">Destination Wedding</p>
+    </div>
+  </div>
+
+</body>
+
+</html>

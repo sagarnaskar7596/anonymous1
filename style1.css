@@ -1,0 +1,61 @@
+.container1{
+    
+    border: 2px;
+     
+    
+}
+.itm1{
+    color: rgb(241, 103, 5) ;
+    font-size: 40px;
+    font-style:initial;
+    margin-left: 60px;
+    
+}
+.itm2{
+    color: rgb(16, 30, 104);
+    font-size: 40px;
+    font-style:initial;
+    
+    
+   
+}
+.itm3{
+    
+    width: 60%;
+    margin-top: 15px;
+    font-size: 25px;
+    margin-left: 30px;
+    display: flex;
+}
+.itm4{
+    
+    font-size: 25px;
+    margin-left: 60px;
+    width: 100px;
+   
+    
+}
+.itm5{
+    
+    width: 25px;
+    display: flex;
+    height: 300px;
+    margin-left: 20%;
+   
+    
+}
+.itm6{
+    margin-top: 150px;
+    font-size:20px ;
+    color: rgb(3, 47, 97);
+    font-style: inherit;
+}
+
+.itm8{
+    display: flex;
+    justify-content: space-evenly;
+}
+.box1{
+    border: 2px solid  pink;
+    background-color: pink;
+}

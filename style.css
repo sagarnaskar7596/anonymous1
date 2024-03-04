@@ -1,0 +1,176 @@
+/* sagar naskar work portion */
+   *{
+    margin: 0;
+   }
+
+.main-container {
+        display: flex;
+
+    }
+
+    .left-container {
+        width: 30%;
+        margin-left: 5px;
+    }
+
+    .right-container {
+        display: flex;
+        flex-direction: column;
+        margin-left: 60px;
+        margin-top: 10px;
+        width:70%;
+    }
+
+    .right-up-container {
+        font-size: 70px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .right-down-container {
+       margin-top: 40px;
+    }
+   
+    .bottom-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: sticky;
+    bottom: 0%;
+    background-color: #f8f9fa;
+    /* opacity: 1; */
+    align-items: last baseline;
+  }
+    .wildlife{
+        width: 250px;
+
+    }
+    .heritage{
+        width: 250px;
+        margin-top:-2px ;
+    }
+    .trekking{
+        width: 250px;
+        margin-top:-2px ;
+    }
+
+    .item{
+width: 240px;
+    }
+  
+
+/* .................................................................................................. */
+
+/* Supriti work portion */
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: hsl(0, 8%, 95%);
+}
+
+nav {
+  background-color: #221313;
+  overflow: hidden;
+}
+
+nav a {
+  float: left;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+main {
+  background-image: url(image/wildlife-banner.webp);
+  padding-top: 50px;
+  height: 600px;
+  text-align: center;
+  color: #fff;
+}
+
+.main1 {
+  margin: 100px;
+}
+
+.main2 {
+  margin-left: 9%;
+  margin-bottom: -15px;
+}
+
+.main-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /* background-color: aquamarine; */
+  margin: 3%;
+}
+
+.packages {
+  width: 15%;
+}
+
+.pics {
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.pic1 {
+  height: 305px;
+
+}
+
+.pic3 {
+
+  height: 305px;
+}
+
+/* .selling {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-right: 20px;
+  } */
+.right-tiger {
+  border-radius: 15px;
+  border-color: darkgray;
+  border-style: solid;
+  width: 100%;
+
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* .box2 {
+    height: 330px;
+    width: 250px;
+  }
+  .box4 :hover {
+    height: 330px;
+    width: 250px;
+  }
+  .box5 {
+    height: 330px;
+    width: 250px;
+  } */
+.ggg {
+  background-color: aqua;
+  border: 2px solid black;
+}
+.breadcrumb{
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  padding: 10px;
+  
+}
+.breads{
+  margin-left: 10px;
+}

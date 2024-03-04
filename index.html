@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- <style>
+    .main-container {
+        display: flex;
+
+    }
+
+    .left-container {
+        width: 30%;
+    }
+
+    .right-container {
+        display: flex;
+        flex-direction: column; 
+        margin-left: 40px;
+        margin-top: 40px;
+    }
+
+    .right-up-container {
+        font-size: 70px;
+    }
+    .right-down-container {
+       margin-top: 50px;
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .bottom-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: sticky;
+    bottom: 0%;
+    background-color: #f8f9fa;
+    /* opacity: 1; */
+    align-items: last baseline;
+  }
+    .wildlife{
+        width: 250px;
+
+    }
+    .heritage{
+        width: 250px;
+        margin-top:-2px ;
+    }
+    .trekking{
+        width: 250px;
+        margin-top:-2px ;
+    }
+</style> -->
+
+<body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img style="margin-right: 10px;" src="icon/inner_logo.png">
+        <a class="navbar-brand" href="#">Destinations</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Holiday Ideas <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Packages</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Places to Stay</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link">Weekend Getaways</a>
+                </li>
+            </ul>
+        </div>
+
+        <a href="login.html">  <button style="margin-right: 5px;" type="button" class="btn btn-primary btn-sm"> Login</button></a>
+        <button type="button" class="btn btn-secondary btn-sm">Sign up</button>
+    </nav>
+
+    <!-----------------------------------------------------------------------------------------------------------------------  -->
+
+    <div class="main-container">
+        <div class="left-container">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/adi-kailash.webp" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/kashmir-banner.webp" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/kerala-banner.webp" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/maharaja1-express.webp" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-container">
+            <div class="right-up-container">
+                <p> <!-- <p ></p>class="big-line"> -->
+                    Let us plan you a<br>perfect <strong style="color:rgb(253, 124, 11)">India Holiday</strong>
+                </p>
+                <h5>Custom-Crafted Tour Packages for Unforgettable Holiday Experiences in India.</h5>
+            </div>
+            <!-- <div class="right-down-container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm">
+                            <p style="margin-left:62px;"><strong>Wildlife <img src="icon/tiger-icon.png"
+                                        alt="#"></strong></p>
+                            <img class="wildlife" src="images/wildlife.webp" alt="">
+                        </div>
+                        <div class="col-sm">
+                            <p style="margin-left:62px;"><strong>Heritage<img style="margin-left: 7px;"
+                                        src="icon/heritage-icon.png" alt="#"></strong></p>
+                            <img class="heritage" src="images/heritage.webp" alt="">
+                        </div>
+                        <div class="col-sm">
+                            <p style="margin-left:62px;"><strong>Trekking<img style="margin-left: 7px;"
+                                        src="icon/trekking-icon.png" alt="#"></strong></p>
+                            <img class="trekking" src="images/trekking.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <a href="wildlife.html">
+                        <strong>Wildlife</strong><br>70+ packages
+                    <img src="images/wildlife.webp" alt="">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="heritage.html">
+                        <strong>Heritage</strong><br>25+ packages</br>
+                        <img src="images/heritage.webp" alt="">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="traking.html">
+                        <strong>Trekking</strong><br>70+ packages</br>
+                        <img src="images/trekking.webp" alt="">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="pilgrimage.html">
+                        <strong>Pilgrimage</strong><br>65+ packages</br>
+                        <img src="images/pilgrim.webp" alt="">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="hill.html">
+                        <strong>Hillstation</strong><br>75+ packages</br>
+                        <img src="images/hill.webp" alt="">
+                    </a>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: false,
+            margin: 10,
+
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 3
+                },
+                1500: {
+                    items: 3
+                },
+            }
+        })
+    </script>
+
+
+<!-- footer part............................................. -->
+    <div class="bottom-container">
+        <div class="items item1">
+            <img src="icon/india-map.png" alt="#">
+            <p style="margin-left: -14px;">India Tour</p>
+        </div>
+        <div class="items item2">
+            <img src="icon/international map.png" alt="#">
+            <p style="margin-left: -14px;">WorldTour</p>
+        </div>
+        <div class="items item3">
+            <img style="width:40px;height:40px;"
+                src="icon/medical-tourism-icon-health-care-tourism-concept-globe-with-stethoscope-plane-sign-stock-vector-eps-10_158224-369.avif"
+                alt="#">
+            <p style="margin-left: -35px;">Medical Tourism</p>
+        </div>
+        <div class="items item4">
+            <img style="width:22px;height:33px;margin-right: 7px;" src="icon/destinationwed.jpg">
+            <p style="margin-left: -60px;">Destination Wedding</p>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

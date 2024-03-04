@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+      /* background-color: rgb(16, 72, 67); */
+    }
+
+    .a {
+      background-color: azure;
+    }
+
+    .c:hover {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: border-radius 0.3s ease;
+      border-radius: 0.6s;
+
+    }
+
+    .c {
+      background-color: rgb(255, 255, 255);
+    }
+
+    .c:img {
+      border-radius: 50%;
+    }
+
+    .a {
+      height: 400px;
+      margin: 5%
+    }
+
+    .b {
+      float: left;
+      width: 60%;
+      word-wrap: break-word;
+      margin: 5px;
+
+    }
+
+    .c {
+      float: right;
+      width: 31%;
+    }
+
+    .d {
+      height: 250px;
+      width: 400px;
+    }
+
+    .cards {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 30px;
+    }
+
+    .card {
+      /* border: 2px solid; */
+      margin: 0px;
+    }
+
+    .card img {
+      height: 200px;
+      transition: border-radius 0.3s ease;
+    }
+
+    .card button:hover {
+      background-color: rgb(85, 192, 231);
+    }
+
+    .card:hover img {
+      border-radius: 50%;
+    }
+
+    .e {
+      display: flex;
+    }
+
+    .f {
+      display: flex;
+    }
+
+    /* #footer {
+      height: 500px;
+      width: 100%;
+      background-color: rgba(15, 4, 4, 0.789);
+      text-align: center;
+      line-height: 150px;
+      letter-spacing: 20px;
+      margin-top: 20px;
+
+    } */
+    #footer{
+    height: 200px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    line-height: 150px;
+    letter-spacing: 20px;
+    margin-top:20px;
+
+}
+    .g {
+      margin-top: 15px;
+    }
+
+    .g:hover {
+      width: 200px;
+      background-color: aqua;
+      size: 100px;
+      margin-top: 15px;
+      border-radius: 20px;
+
+    }
+
+    .h:hover {
+      width: 200px;
+      background-color: aqua;
+      margin-top: 15px;
+      border-radius: 20px;
+    }
+
+    .i:hover {
+      width: 200px;
+      background-color: aqua;
+      margin-top: 15px;
+      border-radius: 20px;
+    }
+
+    .j {
+      border-top: 15px;
+      border-radius: 20px;
+    }
+
+    .j:hover {
+      width: 200px;
+      background-color: aqua;
+      border-radius: 20px;
+    }
+
+    .k:hover {
+      width: 200px;
+      background-color: aqua;
+      border-radius: 20px;
+    }
+
+    .l:hover {
+      width: 200px;
+      background-color: aqua;
+      border-radius: 20px;
+    }
+
+    .m:hover {
+      width: 200px;
+      background-color: aqua;
+      border-radius: 20px;
+    }
+
+    .e {
+      margin: 10px;
+      display: flex;
+      justify-content: center;
+      border-radius: 20px;
+    }
+
+    .package-line {
+      margin-left: 5%;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- header part.......... -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <img style="margin-right: 10px;" src="icon/inner_logo.png">
+    <a class="navbar-brand" href="#">Destinations</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Holiday Ideas <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Packages</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Places to Stay</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link">Weekend Getaways</a>
+        </li>
+      </ul>
+    </div>
+    <a href="login.html">  <button style="margin-right: 5px;" type="button" class="btn btn-primary btn-sm"> Login</button></a>
+        <button type="button" class="btn btn-secondary btn-sm">Sign up</button>
+  </nav>
+  <!-- ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, -->
+  <div class="breadcrumb">
+    <div class="breads bread1">
+      <a href="index.html">HOME</a>
+    </div>
+    <div class="breads bread2">
+      <a href="#">LIBRARY</a>
+    </div>
+  </div>
+  <nav class="a">
+    <div class="b">
+      <h1>Trekking in India</h1>
+      <p>India's Largest and Safest Trekking Organisation, running over 35 Himalayan treks. Known for safety,
+        information and a sustainable style of trekking Stok Kangri Trek - Ladakh. Trekking to one of the highest
+        trekkable peaks in the country is every adventure lovers dream. Stok Kangri trek should be on your bucket list
+        if you are also an adventure junkie. Attaining a maximum altitude of 20,100ft this trek is not for the
+        faint-hearted.There's no better way to explore the majestic Indian Himalayas than to get your two feet
+        working up and down the rugged trails, vast valleys, lush meadows, and dense forests. Yes, trekking
+        in the Indian Himalayas is a larger than life experience that not only brings about a huge rush of
+        adrenaline but also offers an insight into varied remote coexisting cultures.
+        The Indian Himalayas are home to numerous treks, some popular, some lesser-known, while some still
+        awaiting to be discovered. So, whether you are a beginner with dreams of traversing far & wide in
+        the Indian Himalayas or a seasoned trekker seeking challenging treks in the remotest parts, India has it all
+        ready for you.
+        Trekking in India is about constantly changing landscapes and crossover treks in Himachal,
+        whereas, in Uttarakhand, it is an experience of sacred sites and Pandavas-traversed routes that make the major
+        attractions. </p>
+    </div>
+    <div class="c">
+      <img class="d" src="images/home.webp" alt="trekking.jpg">
+    </div>
+  </nav>
+  <div class="package-line">
+    <h3>Best Selling India Trekking Package</h3>
+  </div>
+  <br>
+  <div class="e">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card" style="width: 18rem;">
+          <img src="images/img1.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ladakh</h5>
+            <p class="card-text">Best Treks in Ladakh · Chadar: The Frozen River Trek · Snow Leopard Trek Ladakh · Stok
+              Kangri Trek · Markha Valley Trek · Lamayuru To Chilling Trek, Ladakh..</p>
+            <button class="hover">Know more</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card" style="width: 18rem;">
+          <img src="images/img2.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Leh</h5>
+            <p class="card-text">The Ladakh capital city of Leh lies near the eastern parts of Jammu and Kashmir, on the
+              crossroads of the historic "Silk Route" from Sinkiang to West Asia ....</p>
+            <button class="hover">Know more</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card" style="width: 18rem;">
+          <img src="images/img3.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Manali</h5>
+            <p class="card-text"> It is a rustic enclave known for its cool climate and snow-capped mountains, offering
+              respite to tourists escaping scorching heat of the plains.</p>
+            <button class="hover">Know more</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card" style="width: 18rem;">
+          <img src="images/img4.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Rishikesh</h5>
+            <p class="card-text">Best Treks in Ladakh · Chadar: The Frozen River Trek · Snow Leopard Trek Ladakh · Stok
+              Kangri Trek · Markha Valley Trek · Lamayuru To Chilling Trek, Ladakh..</p>
+            <button class="hover">Know more</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="e">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card" style="width: 18rem; margin-right: 15px;">
+          <img src="images/img5.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Darjeeling</h5>
+            <p class="card-text">Located on top of the hills amidst cool winds and misty weather, Darjeeling gives you
+              an experience like no other. Imagine waking up in the middle of lush tea ....</p>
+            <button class="hover">Know more</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card" style="width: 18rem; margin-right: 15px;">
+          <img src="images/img6.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Wayanad</h5>
+            <p class="card-text">Clean and pristine, enchanting and hypnotizing, this land is filled with history and
+              culture. Located at a distance of 76 km. from the sea shores of Kozhikode,t.</p>
+            <button class="hover">Know more</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card" style="width: 18rem; margin-right: 15px;">
+          <img src="images/img7.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Kodagu</h5>
+            <p class="card-text">Kodagu is the largest Coffee and Pepper producing district in India. Karnataka produces
+              nearly 70% of the total Coffee production in India, out of which 33% is.</p>
+            <button class="hover">Know more</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card" style="width: 18rem; margin-right: 15px;">
+          <img src="images/img8.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Dharamshala</h5>
+            <p class="card-text">Dharamshala is a major hill station and spiritual center. ... It hosts a number of
+              trekking trails across the Himalayas into the upper Ravi Valley and Chamba ...</p>
+            <button class="hover">Know more</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <!-- <div id="footer">
+    <div>
+      <button class="g"> <ion-icon name="airplane-outline"></ion-icon>Vacation </button>
+      <button class="h"><ion-icon name="body-outline"></ion-icon>Booking</button>
+      <button class="i"><ion-icon name="navigate-outline"></ion-icon>Location</button>
+    </div>
+    <div>
+      <button class="j"><ion-icon name="logo-whatsapp"></ion-icon>6295807964</button>
+      <button class="k"><ion-icon name="logo-facebook"></ion-icon>Facebook</button>
+      <button class="l"><ion-icon name="call-outline"></ion-icon>Mobile number</button>
+      <button class="m"><ion-icon name="chatbubble-sharp"></ion-icon>Flexibility</button>
+    </div>
+  </div> -->
+  <div id="footer">
+    <button class="g"> <ion-icon name="airplane-outline"></ion-icon>Vacation </button>
+    <button class="h"><ion-icon name="body-outline"></ion-icon>Booking</button>
+    <button class="i"><ion-icon name="navigate-outline"></ion-icon>Location</button>
+    <button class="j"><ion-icon name="logo-whatsapp"></ion-icon>WhatsApp</button>
+    <button class="k"><ion-icon name="logo-facebook"></ion-icon>Facebook</button>
+    <button class="l"><ion-icon name="call-outline"></ion-icon>Mobile number</button>
+    <button class="m"><ion-icon name="chatbubble-sharp"></ion-icon>Flexibility</button>
+  
+  </div>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+  <!-- footer part..................... -->
+  <div class="bottom-container">
+    <div class="items item1">
+      <img src="icon/india-map.png" alt="#">
+      <p style="margin-left: -14px;">India Tour</p>
+    </div>
+    <div class="items item2">
+      <img src="icon/international map.png" alt="#">
+      <p style="margin-left: -14px;">WorldTour</p>
+    </div>
+    <div class="items item3">
+      <img style="width:40px;height:40px;"
+        src="icon/medical-tourism-icon-health-care-tourism-concept-globe-with-stethoscope-plane-sign-stock-vector-eps-10_158224-369.avif"
+        alt="#">
+      <p style="margin-left: -35px;">Medical Tourism</p>
+    </div>
+    <div class="items item4">
+      <img style="width:22px;height:33px;margin-right: 7px;" src="icon/destinationwed.jpg">
+      <p style="margin-left: -60px;">Destination Wedding</p>
+    </div>
+  </div>
+</body>
+
+</html>
